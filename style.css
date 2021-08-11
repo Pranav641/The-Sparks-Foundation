@@ -1,0 +1,532 @@
+*
+{
+	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.parallax
+{
+  background: url('https://thumbs.dreamstime.com/b/giving-donations-charity-foundation-support-concept-75686415.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: 180vh;
+  background-position: top;
+  min-height: 30vw;
+}
+
+.parallax1
+{
+  background: url('https://www.pymnts.com/wp-content/uploads/2016/07/dipjar-charity-payments.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  min-height: 30vw;
+}
+
+.parallax2
+{
+  background: url('https://media.socastsrm.com/wordpress/wp-content/blogs.dir/2533/files/2021/01/spreadthelove-portrait-921x1024.png') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  min-height: 30vw;
+}
+
+@media (min-width: 500px) and (max-width: 1000px)
+{
+  .parallax2
+  {
+    background-size: 130vh;
+  }
+}
+
+@media (max-width: 499px)
+{
+  .parallax
+  {
+    background-size: 140vh;
+  }
+  .parallax2
+  {
+    background-size: 70vh;
+    background-position: center;
+  }
+}
+
+.logo
+{
+  float: left;
+  width: 120px;
+  height: 60px;
+  padding: 8px 10px 8px 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media  (max-width: 853px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media (max-width: 854px) {
+  .topnav.responsive {position: fixed; width: 100%;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.heading
+{
+  font-size: 2.25rem;
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  animation: heading 1s ease-in-out infinite alternate;
+  text-decoration: underline;
+  text-decoration-style: double;
+  font-style: italic;
+}
+
+
+@-webkit-keyframes heading
+{
+  from
+  {
+    text-shadow: 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to
+  {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.slide_img
+{
+  width: 85%;
+  height: 36vw;
+  border: 5px solid black;
+}
+
+.slide_container
+{
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow_container
+{
+  width: 100%;
+  background-color: black;
+  padding-top: 2vw;
+}
+
+.slideshow_container div
+{
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  padding-bottom: 1vw;
+}
+
+.donate_button
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+.about_container
+{
+  background-color: black;
+  color: white;
+  padding: 2vw;
+}
+
+.about_container h2
+{
+  font-size: 2.5vw;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+.about_container p
+{
+  font-size: 1.75vw;
+}
+
+.events_container
+{
+  background-color: black;
+  color: white;
+  padding: 2vw;
+}
+
+.events_container h2
+{
+  padding-left: 5vw;
+  text-decoration: underline;
+}
+
+#timer , #timer1, #timer2
+{
+  color: white;
+  padding: 5px 25px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.card__thumb div
+{
+  background-color: purple;
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ width: 100%;
+ margin: 20px 0px;
+}
+.card {
+ width: 330px;
+ margin: 10px;
+ background-color: white;
+ box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card__image
+{
+width: 100%;
+height: 400px; 
+}
+
+.card:hover .card__caption {
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.card:hover .card__image {
+opacity: 40%;
+}
+.card:hover .card__thumb::after {
+ top: 0;
+}
+.card:hover .card__snippet {
+ margin: 20px 0;
+}
+.card__thumb {
+ position: relative;
+ max-height: 400px;
+ overflow: hidden;
+}
+@media (min-width: 1024px) {
+ .card__thumb {
+   max-height: 500px;
+}
+}
+.card__thumb::after {
+ top: 0;
+ display: block;
+ content: '';
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, 0) 100%);
+ transition: 0.3s;
+}
+@media (min-width: 300px) {
+ .card__thumb::after {
+   top: calc(100% - 140px);
+}
+}
+.card__image {
+ transition: 0.5s ease-in-out;
+}
+.card__caption {
+ position: absolute;
+ top: 50%;
+ z-index: 1;
+ padding: 0 20px;
+ color: white;
+ text-align: center;
+ transform: translateY(-50%);
+ transition: 0.3s;
+}
+@media (min-width: 300px) {
+ .card__caption {
+   top: calc(100% - 110px);
+   transform: unset;
+}
+}
+.card__title {
+ max-height: 85px;
+ overflow: hidden;
+ font-family: 'Playfair Display', serif;
+ font-size: 29px;
+ line-height: 40px;
+ text-shadow: 5px 5px 10px red;
+ color: white;
+ font-weight: bolder;
+ background-color: black;
+ border-radius: 40px;
+}
+.card__snippet {
+ display: -webkit-box;
+ max-height: 150px;
+ margin: 60px 0;
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+ line-height: 20px;
+ font-weight: bold;
+ transition: 0.5s ease-in-out;
+ -webkit-line-clamp: 5;
+ -webkit-box-orient: vertical;
+ color: black;
+}
+
+.card__button {
+ display: inline-block;
+ padding: 10px 20px;
+ color: white;
+ border: 1px solid white;
+ font-family: 'Roboto', sans-serif;
+ font-size: 14px;
+ text-transform: uppercase;
+ text-decoration: none;
+ transition: 0.3s;
+ background-color: black;
+ font-weight: bold;
+}
+
+.card__button:hover {
+ color: black;
+ background-color: white;
+}
+
+.sponsors_container
+{
+  background-color: black;
+  color: white;
+
+}
+
+.sponsors_container h2
+{
+  padding-left: 5vw;
+  padding-top: 2vw;
+  text-decoration: underline;
+}
+
+marquee
+{
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.cards-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardss {
+  margin: 30px auto;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 20px;
+}
+
+.card_image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 40px;
+  object-fit: fill;
+}
+
+.cardss .card_title {
+  text-align: center;
+  border-radius: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.cardss:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+.donate_
+{
+  width: 100%;
+  background-color: black;
+  padding-top: 50px;
+  color: white;
+}
+.donate_h2
+{
+  padding-left: 15vw;
+  padding-bottom: 1vw;
+  text-decoration: underline;
+}
+
+.donate_img
+{
+  width: 250px;
+  height: 250px;
+  margin: 0px 10vw 3vw 15vw;
+}
+
+.donate_p
+{
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 4vw;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.donate_button
+{
+  padding-bottom: 15px;
+}
+
+@media (min-width: 500px)
+{
+  .donate_container
+  {
+    display: flex;
+  }
+  .donate_h2
+  {
+    padding-left: 10vw;
+    padding-bottom: 1vw;
+  }
+  .donate_img
+  {
+    margin: 0px 5vw 3vw 10vw;
+  }
+  .donate_p
+  {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 650px)
+{
+  .contact_container
+  {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+  }
+
+  .footer-1
+  {
+    width: 30%;
+  }
+  
+}
+
+@media (max-width: 649px)
+{
+  .contact_container
+  {
+      width: 100%;
+      height: 575px;
+      background-color: black;
+      color: white;
+      padding-top: 50px;
+      padding-left: 50px;
+  }
+  .footer-2 h2, .footer-3 h2
+  {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+
+.footer-1 h2, .footer-2 h2, .footer-3 h2
+{
+  padding-bottom: 1.75vw;
+}
+.footer-1 div
+{
+  padding-bottom: 10px;
+}
+.footer-1 p
+{
+  display: inline;
+  padding-left: 15px;
+}
+
+.footer-2 li
+{
+  list-style: '*  ';
+}
+.footer-3 a
+{
+  padding-right: 15px;
+  color: white;
+}
