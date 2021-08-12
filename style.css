@@ -12,7 +12,7 @@
   background-attachment: fixed;
   background-size: 180vh;
   background-position: top;
-  min-height: 30vw;
+  min-height: 400px;
 }
 
 .parallax1
@@ -21,7 +21,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  min-height: 30vw;
+  min-height: 400px;
 }
 
 .parallax2
@@ -30,7 +30,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  min-height: 30vw;
+  min-height: 400px;
 }
 
 @media (min-width: 500px) and (max-width: 1000px)
@@ -51,6 +51,10 @@
   {
     background-size: 70vh;
     background-position: center;
+  }
+  .parallax,.parallax1,.parallax2
+  {
+    min-height: 275px;
   }
 }
 
@@ -141,7 +145,7 @@
 .slide_img
 {
   width: 85%;
-  height: 36vw;
+  height: 42.5vw;
   border: 5px solid black;
 }
 
@@ -167,6 +171,15 @@
   padding-bottom: 1vw;
 }
 
+@media(max-width: 500px)
+{
+  .slide_img
+  {
+    height: 45vw;
+  }
+}
+
+
 .donate_button
 {
   display: flex;
@@ -191,6 +204,14 @@
 .about_container p
 {
   font-size: 1.75vw;
+}
+
+@media (max-width: 600px)
+{
+  .about_container p
+  {
+    font-size: 2.25vw;
+  }
 }
 
 .events_container
@@ -303,14 +324,16 @@ opacity: 40%;
  max-height: 85px;
  overflow: hidden;
  font-family: 'Playfair Display', serif;
- font-size: 29px;
- line-height: 40px;
+ font-size: 27px;
+ line-height: 30px;
  text-shadow: 5px 5px 10px red;
  color: white;
  font-weight: bolder;
  background-color: black;
  border-radius: 40px;
 }
+
+
 .card__snippet {
  display: -webkit-box;
  max-height: 150px;
@@ -337,6 +360,49 @@ opacity: 40%;
  transition: 0.3s;
  background-color: black;
  font-weight: bold;
+}
+
+
+
+@media (max-width: 991px)
+{
+  .card_click
+  {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+  .card:hover .card_click
+  {
+    opacity: 0;
+    font-size: 0px;
+    line-height: 0px;
+    padding: 0px;
+    margin: 0px;
+    border:0px;
+  }
+  .card:hover .card__snippet
+  {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 992px)
+{
+  .card_click
+  {
+    opacity: 0%;
+  }
+  .card_title
+  {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .card:hover .card__snippet
+  {
+    margin-top: 0px;
+  }
 }
 
 .card__button:hover {
